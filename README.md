@@ -6,6 +6,7 @@ This Project is a school based assignment that was given at the  University I at
   -Role base Access Control
   -CRUD
   -Use of object oriented php classes to Model Objects from  database fields
+  -Responsive UI design
 
 Tools:
 For Debbugging the application PHP Tools for visual studio was used Due to take advantage of the Great debugging capabilities of visual Studio.
