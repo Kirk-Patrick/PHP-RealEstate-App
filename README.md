@@ -1,12 +1,10 @@
 # PHP-RealEstate-App
 This Project is a school based assignment that was given at the  University I attended. It Illustrate Common application functionality such as:
 ------------------------------------------------------------------------------------------------------------------------------------------
-Login / User membership
-Sessions
+Login / User membership,
+Sessions,
 Role base Access Control
-CRUD
-
---OOP
+CRUD,
 Use of object oriented php classes to Model Objects from  database fields
 ------------------------------------------------------------------------------------------------------------------------------------------
 Tools:
