@@ -1,0 +1,104 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>MiCasaProj</Name>
+    <ProjectGuid>1fdacd1c-e937-480e-a769-a341796c1a21</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>
+    </RootNamespace>
+    <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
+    <AssemblyName>MiCasaProj</AssemblyName>
+    <SpecificPageValue>propertySearch.php</SpecificPageValue>
+    <StartAction>SpecificPage</StartAction>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <IncludeDebugInformation>true</IncludeDebugInformation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <IncludeDebugInformation>false</IncludeDebugInformation>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AdminCreateUser.php" />
+    <Compile Include="AdminDashBoard.php" />
+    <Compile Include="AdminUserValid.php" />
+    <Compile Include="admin_MonitorProperties.php" />
+    <Compile Include="app-template\admin_header.php" />
+    <Compile Include="app-template\footer.php" />
+    <Compile Include="app-template\header.php" />
+    <Compile Include="app-template\login_header.php" />
+    <Compile Include="app_config.php" />
+    <Compile Include="classes\DbRoot.php" />
+    <Compile Include="logout.php" />
+    <Compile Include="OrmOperations\PropertyDes_CRUD.php" />
+    <Compile Include="OrmOperations\location_CRUD.php" />
+    <Compile Include="propertiesDetailView.php" />
+    <Compile Include="propertiesDisplay.php" />
+    <Compile Include="PropertiesGallery.php" />
+    <Compile Include="propertySearch.php" />
+    <Compile Include="unautorizeAccess.php" />
+    <Compile Include="classes\Auth_controller.php" />
+    <Compile Include="classes\PropertyVal.php" />
+    <Compile Include="classes\Location.php" />
+    <Compile Include="classes\LocationVal.php" />
+    <Compile Include="classes\Property.php" />
+    <Compile Include="classes\RegisterVal.php" />
+    <Compile Include="classes\RegistrationClass.php" />
+    <Compile Include="classes\Validation.php" />
+    <Compile Include="OrmOperations\UsersCRUD.php" />
+    <Compile Include="description.php" />
+    <Compile Include="index.php" />
+    <Compile Include="locatevalid.php" />
+    <Compile Include="location.php" />
+    <Compile Include="login.php" />
+    <Compile Include="propertyvalid.php" />
+    <Compile Include="registerproperty.php" />
+    <Compile Include="regisvalid.php" />
+    <Compile Include="user-controls\uc_description.php" />
+    <Compile Include="user-controls\uc_location.php" />
+    <Compile Include="user-controls\uc_propertyvalid.php" />
+    <Compile Include="user-controls\uc_registration.php" />
+    <Compile Include="user-controls\uc_regisvalid.php" />
+    <Compile Include="user-controls\uc_locatevalid.php" />
+    <Compile Include="userEdit.php" />
+    <Compile Include="userIndex.php" />
+    <Compile Include="userProperties.php" />
+    <Compile Include="users_Monitor.php" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="app-template\" />
+    <Folder Include="dependencies\" />
+    <Folder Include="dependencies\distsweetAlert\" />
+    <Folder Include="classes\" />
+    <Folder Include="images\" />
+    <Folder Include="OrmOperations\" />
+    <Folder Include="reguser-content\" />
+    <Folder Include="user-controls\" />
+    <Folder Include="public\" />
+    <Folder Include="public\css\" />
+    <Folder Include="public\img\" />
+    <Folder Include="public\js\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dependencies\distsweetAlert\sweetalert-dev.js" />
+    <Content Include="dependencies\distsweetAlert\sweetalert.css" />
+    <Content Include="dependencies\distsweetAlert\sweetalert.min.js" />
+    <Content Include="images\house1.jpg" />
+    <Content Include="images\house2.jpg" />
+    <Content Include="images\house3.jpg" />
+    <Content Include="public\css\custom.css" />
+    <Content Include="public\css\font-awesome.min.css" />
+    <Content Include="public\css\footer-distributed-with-address-and-phones.css" />
+    <Content Include="public\css\masterSheet.css" />
+    <Content Include="public\img\createUser.png" />
+    <Content Include="public\img\description-md.png" />
+    <Content Include="public\img\edit_acc.png" />
+    <Content Include="public\img\monitor_users.png" />
+    <Content Include="public\img\location.png" />
+    <Content Include="public\img\login.png" />
+    <Content Include="public\img\monitorProperty.png" />
+    <Content Include="public\img\property_ic.png" />
+    <Content Include="public\img\Thumbs.db" />
+    <Content Include="public\micasa.jpg" />
+    <Content Include="public\Thumbs.db" />
+  </ItemGroup>
+</Project>

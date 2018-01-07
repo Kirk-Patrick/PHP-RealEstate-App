@@ -1,0 +1,195 @@
+﻿/*App theme style sheet, seperate html code from styling code- to promote good software development best practice->seperation of concerns
+    and to have more cleaner and maintainable code.
+    In addition browsers cache the style sheet so we can also have a bit more performance benifits from not directly mixing many
+    styles in the html document
+********************************************************************************************************************************************
+********************************************************************************************************************************************
+*/
+/*****************************************************************************************************************************************/
+/****************************************************************************************************************************************/
+/*******All custom styles specific to app uses prefix app- for improve maintainability******************/
+
+/*overrride user agent style*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #cccccc;
+}
+
+#holder {
+    min-height: 100%;
+    position: relative;
+}
+/*impotant to hav a stick footer whose and content that dont become covered by footer at grouth*/
+#content {
+    min-height: 400px;
+    margin-bottom: 100px;
+    clear: both;
+    margin: 0;
+}
+/*reuse form small elements requiring stop embed a inline blovk command floated left*/
+.app-inline-float-left {
+    display: inline-block;
+    float: left
+}
+
+app-footer-text {
+    float: right;
+}
+
+.question-titles {
+    font-size: larger;
+    margin-left: 18%;
+}
+
+.horizontal-list li {
+    display: inline;
+    padding-left: 1%;
+}
+
+.app-google-material-elevation {
+    box-shadow: 8px 8px 8px #288888;
+}
+
+#app-container {
+    min-height: 100%;
+    position: relative;
+}
+
+#ContentPlaceHolder1_btnAskButton {
+    float: right;
+    margin-right: 2%;
+    background-color: #3399ff;
+}
+
+.app-card-element-align-aside {
+    display: inline-block;
+    min-width: 40px;
+}
+.circle {
+    margin-left:5%;
+    width: 200px;
+    height: 200px;
+    background:rgba(192,192,192,0.3);
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 100px;
+}
+
+.card {
+    transition: 0.3s;
+    background-color: white;
+    width: 95%;
+    margin-left: 2%;
+    min-height: 1300px;
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+.circle:hover {
+    box-shadow: 0px 2px 2px 4px rgba(0,0,0,0.2);
+}
+#property-holder {
+    background: url(property_ic.png) no-repeat center center;
+    height: 200px;
+    width: 200px;
+   
+}
+
+.app-card-content {
+    width: 100%;
+}
+
+.app-post-content-wrapper {
+    border: 0px solid #cccccc;
+}
+
+.card:hover {
+    box-shadow: 0px 4px 2px 8px rgba(0,0,0,0.2);
+}
+
+/*------------------------------Bootstrap overrides---------------------------------------------------------------------------------*/
+/*override bootstrap style and let the child anchor tag be white for all who inherite from this class*/
+.navbar-inverse .navbar-nav > li > a {
+    color: #fff;
+}
+
+.navbar {
+    border-radius: 0px;
+}
+
+.navbar-inverse {
+    background-color: #3399ff;
+    border-color: #080808;
+}
+
+    .navbar-inverse .navbar-brand {
+        color: #eee;
+    }
+
+nav navbar-nav navbar-right {
+    color: #fcf8e3;
+}
+
+.container-fluid {
+    padding-left: 0px;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
+    background-color: #004d99;
+}
+
+.navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse .navbar-nav > li > a:hover {
+    color: #fff;
+    background-color: #337ab7;
+}
+
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+    background-color: #337ab7;
+}
+/*------------------------------End Bootstrap overrides---------------------------------------------------------------------------------*/
+
+
+.gallery {
+    width: 300px;
+    height: 200px;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.gallery-image {
+    cursor: pointer;
+    position: relative;
+    display: block;
+}
+
+.gallery-text {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    background-color: rgba(0,0,0,0.8);
+    opacity: 0;
+    -webkit-transition: opacity 0.6s;
+    -moz-transition: opacity 0.6s;
+    transition: opacity 0.6s;
+    vertical-align: middle;
+    line-height: 200px;
+}
+
+    .gallery-text:hover {
+        opacity: 1;
+    }
+
+    .gallery-text h3 {
+        color: white;
+        display: inline-table;
+        vertical-align: middle;
+        line-height: 100%;
+    }

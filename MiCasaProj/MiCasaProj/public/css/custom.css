@@ -1,0 +1,58 @@
+﻿
+.circular {
+    border: none;
+    border-radius: 18px;
+}
+
+.userTextBoxes {
+    margin-left: 120%;
+    -webkit-transition: width 1s, height 2s;
+    transition: width 1s, height 2s;
+}
+
+.userTextBoxes-TO-Left {
+    margin-left: 2%;
+    -webkit-transition: width 1s, height 2s;
+    transition: width 1s, height 2s;
+}
+#create-user {
+    margin-top: 68px;
+    margin-bottom: 10px;
+    background-color: #3399ff;
+    color: white;
+    max-width: 500px;
+    height: 530px;
+    opacity: 0.95;
+}
+
+#img-create-user {
+    width: 26%; /*use percentage for more responsive design*/
+    height: 25%;
+    margin-top: -17%;
+    margin-left: 40%;
+}
+
+.center {
+    margin: 0 auto;
+}
+/*------------------------------------------*/
+.expander {
+    -webkit-transition: width 1s, height 2s; /* For Safari 3.1 to 6.0 */
+    transition: width 3s, height 2s;
+}
+
+    .expander:hover {
+        width: 228px;
+    }
+
+.text-line {
+    background-color: transparent;
+    color: #eeeeee;
+    outline: none;
+    outline-style: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid #eeeeee 1px;
+    padding: 3px 10px;
+}
